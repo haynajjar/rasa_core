@@ -1,3 +1,9 @@
 -r requirements_spacy_sklearn.txt
+
+# not sure why these need to be specified
+# with rasa_nlu and rasa_core installs
+coloredlogs==7.3
 flask==0.12
+ruamel.yaml==0.15.34
+
 rasa_nlu
