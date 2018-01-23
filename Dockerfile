@@ -26,9 +26,9 @@ RUN pip install -r requirements/requirements_docker.txt
 RUN pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-1.2.0/en_core_web_sm-1.2.0.tar.gz --no-cache-dir > /dev/null \
     && python -m spacy link en_core_web_sm en
     
-RUN wget -qO- https://get.haskellstack.org/ | sh
+
 RUN pip install duckling
-python -m spacy download fr
+RUN python -m spacy download fr
 
 ## rasa core
 RUN pip install rasa_core
