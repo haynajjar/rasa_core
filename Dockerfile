@@ -26,9 +26,6 @@ RUN pip install -r requirements/requirements_docker.txt
 RUN pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-1.2.0/en_core_web_sm-1.2.0.tar.gz --no-cache-dir > /dev/null \
     && python -m spacy link en_core_web_sm en
     
-## tensorflow
-RUN pip install --upgrade "https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.1-cp27-none-linux_x86_64.whl"
-
 
 ## rasa core
 RUN pip install rasa_core
