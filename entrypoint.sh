@@ -55,7 +55,7 @@ case ${1} in
         exec python -m rasa_core.train "${@:2}"
         ;;
     run-rasa-core)
-        exec python -m rasa_core.run "${@:2}"
+        exec python -m rasa_core.server "${@:2}"
         ;;
     *)
         print_help
